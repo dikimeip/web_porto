@@ -32,7 +32,7 @@ export default function HeroSection() {
             </svg>
 
             <img
-                src="/assets/porto2.png"
+                src="./assets/porto2.png"
                 alt="Profile Image"
                 className="size-36 rounded-full"
                 width={144}
