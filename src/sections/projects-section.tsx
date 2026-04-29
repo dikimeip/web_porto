@@ -6,38 +6,51 @@ export default function ProjectsSection() {
             title: "Marketplace",
             job: "Full Stack",
             description: "Saya mengembangkan Marketplace terintegrasi dengan landing page menggunakan Vue.js, CMS berbasis Laravel untuk manajemen data dan transaksi, website utama menggunakan React yang dinamis, serta aplikasi mobile dengan Flutter untuk pengalaman pengguna yang optimal dan responsif.",
-            image: "/assets/project-1.png",
+            image: "./assets/mockuper.png",
         },
         {
             title: "Marketplace",
             job: "Mobile Developer",
             description: "Project e-commerce ini dikembangkan menggunakan Flutter untuk menghadirkan aplikasi mobile yang responsif dan modern. notifikasi menggunakan Firebase, sementara manajemen state menggunakan GetX guna memastikan performa optimal, struktur kode terorganisir, serta pengalaman belanja yang cepat, aman, dan efisien bagi pengguna.",
-            image: "/assets/project-2.png",
+            image: "./assets/mockuper1.png",
         },
         {
             title: "Apliaksi Daily Task",
             job: "Mobile Developer",
             description: "Aplikasi daily task ini dikembangkan menggunakan Flutter dengan fitur penyimpanan data secara offline sehingga pengguna tetap dapat menambah, mengubah, dan menghapus tugas tanpa koneksi internet. Ketika perangkat kembali online, sistem akan otomatis melakukan sinkronisasi data agar tetap konsisten, aman, dan terbarui secara real-time.",
-            image: "/assets/project-2.png",
+            image: "./assets/mockuper2.png",
         },
         {
             title: "Aplikasi Kehamilan",
             job: "Mobile Developer",
             description: "Aplikasi kehamilan ini dikembangkan menggunakan Flutter dan terintegrasi dengan Supabase sebagai backend utama. Aplikasi telah mendukung mode offline, memungkinkan pengguna mengakses dan menyimpan data kehamilan tanpa koneksi internet, lalu melakukan sinkronisasi otomatis saat kembali online.",
-            image: "/assets/project-2.png",
+            image: "./assets/mockuper3.png",
         },
         {
-            title: "Aplikasi Kehamilan",
+            title: "Aplikasi rumah sakit",
             job: "Mobile Developer",
             description: "Aplikasi rumah sakit ini dikembangkan menggunakan Flutter untuk menghadirkan layanan kesehatan digital yang praktis dan terintegrasi. Fitur utama meliputi chat dengan dokter, booking jadwal konsultasi, serta pembelian obat secara online, sehingga memudahkan pasien mendapatkan layanan medis dengan cepat, aman, dan efisien.",
-            image: "/assets/project-2.png",
+            image: "./assets/mockuper4.png",
         },
         {
             title: "Website Company Profile",
             job: "Frontend Developer",
             description: "Website company profile ini dikembangkan menggunakan Bootstrap untuk menghasilkan tampilan yang responsif, modern, dan profesional. Website menampilkan informasi perusahaan, layanan, portofolio, serta kontak secara terstruktur, sehingga memudahkan pengunjung memahami profil bisnis dan meningkatkan kredibilitas serta kepercayaan terhadap perusahaan.",
-            image: "/assets/project-1.png",
+            image: "./assets/mockuper7.png",
         },
+        {
+            title: "Aplikasi Catatan Keuangan",
+            job: "Mobile Developer",
+            description: "Aplikasi pencatatan keuangan berbasis mobile yang pengguna dapat mengelola pemasukan dan pengeluaran secara offline menggunakan database lokal. Fitur utama meliputi pencatatan income dan expense, pengelompokan kategori keuangan, pengaturan pocket (alokasi pengeluaran), serta visualisasi grafik untuk memantau pola pengeluaran.",
+            image: "./assets/mockuper6.png",
+        },
+        {
+            title: "Aplikasi POS Kasir",
+            job: "Frontend Developer",
+            description: "Aplikasi POS kasir berbasis mobile yang dapat digunakan secara offline untuk mendukung operasional toko. Fitur utama meliputi manajemen produk, update stok, transaksi, pengelolaan data customer, serta grafik laporan transaksi. Dilengkapi dengan fitur import/export data untuk migrasi dan backup, serta sistem keamanan menggunakan PIN code.",
+            image: "./assets/mockuper5.png",
+        },
+
     ];
 
     return (

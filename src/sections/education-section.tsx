@@ -8,7 +8,7 @@ export default function EducationSection() {
                     <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
                         <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
                             <img
-                                src="/assets/unsila.png"
+                                src="./assets/unsila.png"
                                 alt="Education"
                                 width={25}
                                 height={25}
