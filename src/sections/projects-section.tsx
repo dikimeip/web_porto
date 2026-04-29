@@ -9,6 +9,24 @@ export default function ProjectsSection() {
             image: "./assets/mockuper.png",
         },
         {
+            title: "Website Company Profile",
+            job: "Frontend Developer",
+            description: "Website company profile ini dikembangkan menggunakan Bootstrap untuk menghasilkan tampilan yang responsif, modern, dan profesional. Website menampilkan informasi perusahaan, layanan, portofolio, serta kontak secara terstruktur, sehingga memudahkan pengunjung memahami profil bisnis dan meningkatkan kredibilitas serta kepercayaan terhadap perusahaan.",
+            image: "./assets/mockuper7.png",
+        },
+        {
+            title: "Website Pengajuan Skripsi",
+            job: "Full Stack",
+            description: "Website pengajuan skripsi berbasis web yang memungkinkan mahasiswa mengajukan proposal dengan proses persetujuan oleh administrator dan dosen pembimbing. Jika pengajuan ditolak, mahasiswa dapat melakukan revisi dan mengajukan kembali. Sistem ini dikembangkan menggunakan Laravel dengan database PostgreSQL.",
+            image: "./assets/mockuper10.png",
+        },
+        {
+            title: "CMS Lembaga Agama",
+            job: "Full Stack",
+            description: "CMS management sistem informasi lembaga agama berbasis web yang dilengkapi fitur PPOB untuk pengelolaan berbagai transaksi pembayaran. Aplikasi ini dikembangkan menggunakan Laravel dengan database PostgreSQL, serta menyediakan manajemen data, pengguna, dan laporan secara terpusat.",
+            image: "./assets/mockuper9.png",
+        },
+        {
             title: "Marketplace",
             job: "Mobile Developer",
             description: "Project e-commerce ini dikembangkan menggunakan Flutter untuk menghadirkan aplikasi mobile yang responsif dan modern. notifikasi menggunakan Firebase, sementara manajemen state menggunakan GetX guna memastikan performa optimal, struktur kode terorganisir, serta pengalaman belanja yang cepat, aman, dan efisien bagi pengguna.",
@@ -32,12 +50,7 @@ export default function ProjectsSection() {
             description: "Aplikasi rumah sakit ini dikembangkan menggunakan Flutter untuk menghadirkan layanan kesehatan digital yang praktis dan terintegrasi. Fitur utama meliputi chat dengan dokter, booking jadwal konsultasi, serta pembelian obat secara online, sehingga memudahkan pasien mendapatkan layanan medis dengan cepat, aman, dan efisien.",
             image: "./assets/mockuper4.png",
         },
-        {
-            title: "Website Company Profile",
-            job: "Frontend Developer",
-            description: "Website company profile ini dikembangkan menggunakan Bootstrap untuk menghasilkan tampilan yang responsif, modern, dan profesional. Website menampilkan informasi perusahaan, layanan, portofolio, serta kontak secara terstruktur, sehingga memudahkan pengunjung memahami profil bisnis dan meningkatkan kredibilitas serta kepercayaan terhadap perusahaan.",
-            image: "./assets/mockuper7.png",
-        },
+        
         {
             title: "Aplikasi Catatan Keuangan",
             job: "Mobile Developer",
