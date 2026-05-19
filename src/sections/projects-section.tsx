@@ -9,6 +9,38 @@ export default function ProjectsSection() {
             image: "./assets/mockuper.png",
         },
         {
+            title: "Website Company Profile",
+            job: "Frontend Developer",
+            description: "Website company profile ini dikembangkan menggunakan Bootstrap untuk menghasilkan tampilan yang responsif, modern, dan profesional. Website menampilkan informasi perusahaan, layanan, portofolio, serta kontak secara terstruktur, sehingga memudahkan pengunjung memahami profil bisnis dan meningkatkan kredibilitas serta kepercayaan terhadap perusahaan.",
+            image: "./assets/mockuper7.png",
+        },
+        {
+            title: "Website Pengajuan Skripsi",
+            job: "Full Stack",
+            description: "Website pengajuan skripsi berbasis web yang memungkinkan mahasiswa mengajukan proposal dengan proses persetujuan oleh administrator dan dosen pembimbing. Jika pengajuan ditolak, mahasiswa dapat melakukan revisi dan mengajukan kembali. Sistem ini dikembangkan menggunakan Laravel dengan database PostgreSQL.",
+            image: "./assets/mockuper10.png",
+        },
+        {
+            title: "CMS Lembaga Agama",
+            job: "Full Stack",
+            description: "CMS management sistem informasi lembaga agama berbasis web yang dilengkapi fitur PPOB untuk pengelolaan berbagai transaksi pembayaran. Aplikasi ini dikembangkan menggunakan Laravel dengan database PostgreSQL, serta menyediakan manajemen data, pengguna, dan laporan secara terpusat.",
+            image: "./assets/mockuper9.png",
+        },
+
+        {
+            title: "CMS Wedding Planner",
+            job: "Full Stack",
+            description: "CMS Wedding Planner adalah aplikasi berbasis Laravel dan PostgreSQL untuk membantu pengelolaan pernikahan secara digital. Fitur utama meliputi vendor, tabungan, budgeting, task management, undangan, dan panitia. Sistem ini memudahkan monitoring progress, pengaturan anggaran, serta pengelolaan persiapan pernikahan secara terstruktur, modern, efisien, dan responsif dalam satu dashboard terintegrasi.",
+            image: "./assets/mockuper11.png",
+        },
+        {
+            title: "Website AI",
+            job: "Full Stack",
+            description: "Website AI ini dikembangkan menggunakan Laravel dengan database lokal PostgreSQL. Sistem dilengkapi fitur autentikasi login untuk keamanan pengguna, sehingga setiap data percakapan dan riwayat chat dapat tersimpan secara aman. Website memiliki tampilan modern, responsive, dan mendukung pengelolaan data AI chatbot secara efisien dalam satu platform terintegrasi.",
+            image: "./assets/mockuper12.png",
+        },
+
+        {
             title: "Marketplace",
             job: "Mobile Developer",
             description: "Project e-commerce ini dikembangkan menggunakan Flutter untuk menghadirkan aplikasi mobile yang responsif dan modern. notifikasi menggunakan Firebase, sementara manajemen state menggunakan GetX guna memastikan performa optimal, struktur kode terorganisir, serta pengalaman belanja yang cepat, aman, dan efisien bagi pengguna.",
@@ -32,12 +64,7 @@ export default function ProjectsSection() {
             description: "Aplikasi rumah sakit ini dikembangkan menggunakan Flutter untuk menghadirkan layanan kesehatan digital yang praktis dan terintegrasi. Fitur utama meliputi chat dengan dokter, booking jadwal konsultasi, serta pembelian obat secara online, sehingga memudahkan pasien mendapatkan layanan medis dengan cepat, aman, dan efisien.",
             image: "./assets/mockuper4.png",
         },
-        {
-            title: "Website Company Profile",
-            job: "Frontend Developer",
-            description: "Website company profile ini dikembangkan menggunakan Bootstrap untuk menghasilkan tampilan yang responsif, modern, dan profesional. Website menampilkan informasi perusahaan, layanan, portofolio, serta kontak secara terstruktur, sehingga memudahkan pengunjung memahami profil bisnis dan meningkatkan kredibilitas serta kepercayaan terhadap perusahaan.",
-            image: "./assets/mockuper7.png",
-        },
+
         {
             title: "Aplikasi Catatan Keuangan",
             job: "Mobile Developer",
@@ -58,31 +85,36 @@ export default function ProjectsSection() {
             <div className="flex flex-wrap justify-center gap-6">
                 {projects.map((project) => (
                     <div
-                    key={project.title}
-                    className="w-72 h-125 flex flex-col hover:-translate-y-1 transition duration-300 border border-gray-200 rounded-xl overflow-hidden shadow-sm"
+                        key={project.title}
+                        className="w-72 h-125 flex flex-col hover:-translate-y-1 transition duration-300 border border-gray-200 rounded-xl overflow-hidden shadow-sm"
                     >
-                    <img
-                        className="h-40 w-full object-cover"
-                        src={project.image}
-                        alt={project.title}
-                    />
+                        <img
+                            className="h-40 w-full object-cover"
+                            src={project.image}
+                            alt={project.title}
+                        />
 
-                    <div className="flex flex-col flex-1 p-4">
-                        <h3 className="text-base font-medium mb-0 line-clamp-1">
-                        {project.title}
-                        </h3>
-                        <h3 className="font-medium mb-2 line-clamp-1">
-                        {project.job}
-                        </h3>
+                        <div className="flex flex-col flex-1 p-4">
+                            <h3 className="text-base font-medium mb-0 line-clamp-1">
+                                {project.title}
+                            </h3>
+                            <h3 className="font-medium mb-2 line-clamp-1">
+                                {project.job}
+                            </h3>
 
-                        <p className="text-gray-500 text-sm flex-1 line-clamp-3">
-                        {project.description}
-                        </p>
-                    </div>
+                            <p className="text-gray-500 text-sm flex-1 line-clamp-3">
+                                {project.description}
+                            </p>
+                            {project.title === 'CMS Wedding Planner' ? (
+                                <a className="text-blue-500 hover:underline mt-5 font-semibold hover:text-blue-600" target="_blank" href="https://dc-wedding-planner.vercel.app/">Demo</a>
+                            ) : project.title === 'Website AI' ? (
+                                <a className="text-blue-500 hover:underline mt-5 font-semibold hover:text-blue-600" target="_blank" href="https://dikiai.vercel.app/">Demo</a>
+                            ) : null}
+                        </div>
                     </div>
                 ))}
-                </div>
+            </div>
 
-        </Section>
+        </Section >
     );
 }
