@@ -39,6 +39,12 @@ export default function ProjectsSection() {
             description: "Website AI ini dikembangkan menggunakan Laravel dengan database lokal PostgreSQL. Sistem dilengkapi fitur autentikasi login untuk keamanan pengguna, sehingga setiap data percakapan dan riwayat chat dapat tersimpan secara aman. Website memiliki tampilan modern, responsive, dan mendukung pengelolaan data AI chatbot secara efisien dalam satu platform terintegrasi.",
             image: "./assets/mockuper12.png",
         },
+        {
+            title: "Website Photobox",
+            job: "Frontend Developer",
+            description: "Website Photobox memungkinkan pengguna membuat foto kreatif secara mudah melalui upload file atau kamera langsung. Tersedia berbagai frame lucu, fitur custom text, dan custom background untuk personalisasi foto sesuai keinginan. Hasil foto dapat dipreview secara real-time dan diunduh dengan kualitas tinggi untuk dibagikan atau dicetak.",
+            image: "./assets/mc13.png",
+        },
 
         {
             title: "Marketplace",
@@ -86,7 +92,7 @@ export default function ProjectsSection() {
                 {projects.map((project) => (
                     <div
                         key={project.title}
-                        className="w-72 h-125 flex flex-col hover:-translate-y-1 transition duration-300 border border-gray-200 rounded-xl overflow-hidden shadow-sm"
+                        className="md:w-72 md:h-125 flex flex-col hover:-translate-y-1 transition duration-300 border border-gray-200 rounded-xl overflow-hidden shadow-sm"
                     >
                         <img
                             className="h-40 w-full object-cover"
@@ -109,7 +115,9 @@ export default function ProjectsSection() {
                                 <a className="text-blue-500 hover:underline mt-5 font-semibold hover:text-blue-600" target="_blank" href="https://dc-wedding-planner.vercel.app/">Demo</a>
                             ) : project.title === 'Website AI' ? (
                                 <a className="text-blue-500 hover:underline mt-5 font-semibold hover:text-blue-600" target="_blank" href="https://dikiai.vercel.app/">Demo</a>
-                            ) : null}
+                            ) : project.title === 'Website Photobox' ? (
+                                <a className="text-blue-500 hover:underline mt-5 font-semibold hover:text-blue-600" target="_blank" href="https://dc-photobox.vercel.app/">Demo</a>
+                            ) :  null}
                         </div>
                     </div>
                 ))}
